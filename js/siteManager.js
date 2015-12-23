@@ -6,8 +6,8 @@ String.prototype.replaceAt=function(index, character) {
 //------------------------------------------------------------------------
 
 
-var header_target_string = "Hey I am Victor !";
-var header_actual_string = "*****************";
+var header_target_string = "Hey! My name is Victor!";
+var header_actual_string = "***********************";
 var header = document.getElementsByClassName("header-back");
 var count = 0;
 var to;
@@ -23,5 +23,5 @@ function header_loop(){
 		header[0].querySelector("#ht").innerHTML = header_actual_string;
 		count++;
 	}
-	 to = setTimeout( header_loop, 300);
+	 to = setTimeout( header_loop, 200);
 }

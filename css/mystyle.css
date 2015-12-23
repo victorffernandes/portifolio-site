@@ -1,23 +1,37 @@
 .header-text{
-	position: absolute;
+	position: relative;
 	color: #fff;
-	font-size:3vw;
+	font-size:5vw;
 	text-align: center;
-	top:0px;
-	left:40vw;
 }
 
 
+.header-menu{
+	z-index:10;
+	position: absolute;
+	width:100%;
+	background-color: #000	;
+	top:20vw;
+	max-height: 60px;
+}
+
+
+#header_message{
+	text-align: center;
+	color:#fff;
+	font-size:3vw;
+}
+
 .header-icon{
-	position: static;
+	position: relative;
 	width:15vw;
 	height: 15vw;
-
+	text-align: center;
 }
 
 
 .header-back{
-	position: static;
+	position: absolute;
 	background-color:#000;
 	top:0px;
 	width:100%;
