@@ -22,6 +22,6 @@ function header_loop(){
 		header_actual_string =  header_actual_string.replaceAt(count,header_target_string[count]);
 		header[0].querySelector("#ht").innerHTML = header_actual_string;
 		count++;
+		to = setTimeout( header_loop, 200);
 	}
-	 to = setTimeout( header_loop, 200);
 }
