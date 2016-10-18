@@ -11,12 +11,12 @@
 	<body>
 		<header>
 			<script>
-				var array = ["images/fulls/perfil.png","images/fulls/team.png","images/fulls/calc_photo.png"];
-				var arrayT = ["Victor Fernandes Portfolio", "Amateur Programmer", "CEJLL Student"];
+				var array = ["images/fulls/calc_photo2.png"];
+				var arrayT = ["CEJLL Student"];
 				var i = 0;
 				function changeImage(){
-					if(i == 3) i = 0;
-					document.getElementById("header-painel").src=array[i];
+					if(i == array.length) i = 0;
+					document.getElementById("header-painel").style.backgroundImage="url('"+array[i]+"'";
 					document.getElementById("img-title").innerHTML=arrayT[i];
 					
 					console.log(i);
@@ -29,10 +29,12 @@
 				}
 				set(7000);
 			</script>
+				
+			<div id="header-painel">
+				<center>
 				<h1 id="img-title">CEJLL Student</h1>
-			<img id="header-painel" src="images/fulls/calc_photo.png">
-
-		</img>	
+			</center>
+			</div>	
 
 		<nav>
 			<ul class="navigation" >
@@ -68,12 +70,15 @@
 		
 		<footer>
 			<div class="main-footer">
+				<center>
 				<p>Follow me on: </p>
 				<a href = "https://twitter.com/zappknight"><img src="images/icons/twitter.png"></a>
 				<a href = "https://github.com/victorffernandes"><img  src="images/icons/git.png"></a>
+				<h5>® 2016 Victor Fernandes </h5>
+				</center>
 			</div>
 			
-		<h5>® 2016 Victor Fernandes </h5>
+		
 		</footer>
 		
 		

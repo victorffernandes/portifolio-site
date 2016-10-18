@@ -30,23 +30,23 @@ padding: 0px;
 
 #header-painel{
 	width:100%;
-	height:450px;
-	object-fit: cover;
+	height:30em;
 	z-index: -1;
-	margin-top: -25%;
+	object-fit: cover;
+	background-repeat: no-repeat;
+	background: url('../../images/fulls/calc_photo2.png');
+	text-align: center;
+	background-size: cover;
 }
 
-.small-ball{
-	width:30px;
-	height: 30px;
-}
+.small-ball{}
 
 header h1{
 	position: relative;
 	text-align: center;
+	line-height: 13em;
 	color: #fff;
-	vertical-align: center;
-	margin-bottom: 20%;
+	
 	font-family: Cabin;
 }
 
@@ -114,7 +114,10 @@ header h1{
 
 footer{
 	background-color: #616161;
-	min-height: 40%;
+    position: relative;
+    z-index: 10;
+    height: 9em;
+    overflow-y: hidden;
 }
 
 footer p{
@@ -136,9 +139,12 @@ footer img{
 	display:inline;
 }
 
-
 .main-footer{
 	vertical-align: center;
 	text-align: center;	
+}
+
+.main-footer p{
+	color:#fff;
 }
 
