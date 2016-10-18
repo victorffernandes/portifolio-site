@@ -15,9 +15,10 @@
 				var arrayT = ["Victor Fernandes Portfolio", "Amateur Programmer", "CEJLL Student"];
 				var i = 0;
 				function changeImage(){
+					if(i == 3) i = 0;
 					document.getElementById("header-painel").src=array[i];
 					document.getElementById("img-title").innerHTML=arrayT[i];
-					if(i >= 2) i = 0;
+					
 					console.log(i);
 
 					i++;
