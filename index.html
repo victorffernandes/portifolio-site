@@ -3,47 +3,17 @@
 	<head>
 		<title>Victor Fernandes</title>
 		<meta charset="utf-8" />
-		<script src="assets/js/jquery-3.1.1.js"></script>
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/style.css" />
 		<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	</head>
 	<body>
-		<header>
-			<script>
-				var array = ["images/fulls/calc_photo2.png"];
-				var arrayT = ["CEJLL Student"];
-				var i = 0;
-				function changeImage(){
-					if(i == array.length) i = 0;
-					document.getElementById("header-painel").style.backgroundImage="url('"+array[i]+"'";
-					document.getElementById("img-title").innerHTML=arrayT[i];
-					
-					console.log(i);
-
-					i++;
-				}
-
-				function set(t) {
-				    myVar = setInterval(changeImage, t);
-				}
-				set(7000);
-			</script>
-				
-			<div id="header-painel">
-				<center>
-				<h1 id="img-title">CEJLL Student</h1>
-			</center>
-			</div>	
-
-		<nav>
-			<ul class="navigation" >
-			<a href="#"><li>Home</li></a>
-			<a href="#" ><li id="active">Works</li></a>
-			<a href="#"><li>Skills</li></a>
-			</ul>
-		</nav>
-		</header>
+	<div id="headerContent"></div>
+		<script>
+		$(function(){$("#footerContent").load("footer.html");});
+		$(function(){$("#headerContent").load("header.html");}); 
+		 </script> 
+		
 		
 		<section class="works_painel" >
 			<div class="work">
@@ -67,20 +37,7 @@
 			<center><a href="https://play.google.com/store/apps/details?id=com.nave.gentefina&hl=pt_BR"><img src="images/icons/gp.png"/></a></center>
 			</div>
 		</section>
-		
-		<footer>
-			<div class="main-footer">
-				<center>
-				<p>Follow me on: </p>
-				<a href = "https://twitter.com/zappknight"><img src="images/icons/twitter.png"></a>
-				<a href = "https://github.com/victorffernandes"><img  src="images/icons/git.png"></a>
-				<h5>® 2016 Victor Fernandes </h5>
-				</center>
-			</div>
-			
-		
-		</footer>
-		
+		<div id="footerContent"></div>
 		
 	</body>
 </html>

@@ -1,10 +1,31 @@
-<header>
-			<img id="header-painel" src="images/fulls/teste1.jpg">
-		<nav>
-			<ul class="navigation">
-			<a href="#"><li>Home</li></a>
-			<a href="#" ><li id="active">Works</li></a>
-			<a href="#"><li>Skills</li></a>
-			</ul>
-		</nav>
-		</header>
+<html> 
+  <head> 
+  <link rel="stylesheet" href="assets/css/style.css" />
+		<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head> 
+	<script>
+		$(function(){$("#footerContent").load("footer.html");});
+		$(function(){$("#headerContent").load("header.html");}); 
+	</script> 
+  <body>
+	<div id="headerContent"></div>
+	<!-- Main Content-->
+	<section class="myskills">
+		<h2>Programming Languages</h2>
+			<h3>JavaScript</h3>
+			<img src="images/icons/circle.png"/>
+			<h3>Java</h3>
+			<h3>C#</h3>
+			<h3>PHP</h3>
+			<h3>HTML/CSS</h3>
+			
+			<h2>Frameworks, Engines and IDE's</h2>
+			<h3>Visual Studio</h3>
+			<h3>Unity3d</h3>
+			<h3>Android Studio</h3>
+			<h3>Wordpress</h3>
+	</section>
+     <div id="footerContent"></div>
+  </body> 
+</html>
