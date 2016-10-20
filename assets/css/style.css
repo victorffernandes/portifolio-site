@@ -39,8 +39,6 @@ padding: 0px;
 	background-size: cover;
 }
 
-.small-ball{}
-
 header h1{
 	position: relative;
 	text-align: center;
@@ -104,7 +102,7 @@ header h1{
 
 .work{
 	margin: 0 auto; 
-	width:80%;
+	width:60%;
 	margin-bottom:5%;
 	background-color:#e8eaf6;
 	padding: 10% 30px 10% 30px;
@@ -147,4 +145,45 @@ footer img{
 .main-footer p{
 	color:#fff;
 }
+/*Skills*/
 
+.myskills{
+	margin-left:15%;
+	margin-right:15%;
+	padding-top:2%;
+	padding-left:2%;
+	width:70%;
+	background-color:#e8eaf6;
+	margin-bottom:5%;
+}
+
+.myskills h2{
+	margin-left:5%;
+	font-family:JosefinBold;
+	font-size:2em;
+	top:0px;
+}
+
+.myskills h3{
+	display:inline-block;
+	font-family:Cabin;
+	font-size:1em;
+	width:calc((10vw + 10vh) / 2);
+	margin-left:10%;
+}
+
+.myskills .small-ball{
+	width:2%;
+	height:2%;
+	background-color:#e57373; 
+	display:inline-block;
+	margin-left:2%;
+	border:0.2em solid black;
+}	
+
+.skill-block{
+	display:inline-block;
+	width:45%;
+	padding:0px;
+	top:0%;
+}
