@@ -64,9 +64,10 @@ header h1{
 	text-align:center;
 	display: inline-block;
 	width:32%;
-	font-family: Playfair;
+	font-family: Josefin;
 	padding: 30px 0px 30px 0px;
 	margin-left: 0px;
+	font-size:2em;
 }
 
 .navigation a{
@@ -148,8 +149,7 @@ footer img{
 /*Skills*/
 
 .myskills{
-	margin-left:15%;
-	margin-right:15%;
+	
 	padding-top:2%;
 	padding-left:2%;
 	width:70%;
@@ -186,4 +186,52 @@ footer img{
 	width:45%;
 	padding:0px;
 	top:0%;
+}
+
+/*Home*/
+
+.myhome{
+	background-color:#e8eaf6;
+	margin-left:15%;
+	margin-right:15%;
+	padding-bottom:5%;
+}
+
+.myhome #profile-pic{
+	 border-radius: 100%;
+	 width:20%;
+	 margin-left:2%;
+	 margin-top:2%;
+	 vertical-align:top;
+}
+
+.myhome h2{
+	 display:inline-block;
+	 font-family:Josefin;/*mudar a fonte pedir ajuda pro DM*/
+	 font-size:2em;
+}
+
+#text-about {
+	 display:inline-block;
+	 width:50%;
+	 margin-left:5%;
+	 font-family:Josefin;/*mudar a fonte pedir ajuda pro DM*/
+}
+
+#text-study{
+	margin-left:28%;
+}
+
+#text-study a{
+	text-decoration: none;
+}
+
+#text-study h3{
+	color:#3f51b5;
+	font-size:1.2em;
+	font-family:JosefinBold;
+}
+
+#text-study p{
+	font-family:Josefin;
 }
