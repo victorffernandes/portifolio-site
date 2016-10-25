@@ -18,6 +18,17 @@
     src: url(../fonts/josefin/JosefinSans-Bold.ttf);
 }
 
+/*Variables*/
+
+:root {
+  --light-color: #C4DfE6;
+  --dark-color:#003B46;
+  --ocean-color:#07575B;
+  --wave-color:#66A5AD;
+}
+
+/*Desgin*/
+
 
 html,body{
 max-width:100%;
@@ -29,31 +40,27 @@ padding: 0px;
 /*Header*/
 
 #header-painel{
+	margin: 0px;
 	width:100%;
 	height:30em;
-	z-index: -1;
-	object-fit: cover;
-	background-repeat: no-repeat;
-	background: url('../../images/fulls/calc_photo2.png');
 	text-align: center;
 	background-size: cover;
+	background: var(--wave-color);
 }
 
-header h1{
+#header-painel h1{
+	display: inline;
 	position: relative;
 	text-align: center;
-	line-height: 13em;
-	color: #fff;
-	
+	vertical-align: middle;
+	color: var(--dark-color);
 	font-family: Cabin;
-}
-
-#header-painel img{
-	margin: 0px;
+	font-size: calc(vw*2);
 }
 
 .navigation{
-	margin:0px;
+	margin:0 auto;
+	background: var(--light-color);
 }
 
 .navigation #active{
@@ -76,7 +83,7 @@ header h1{
 }
 
 .navigation li:hover{
-	background-color:#bdbdbd;
+	background-color:var(--wave-color);
 }
 
 /*Portfolio*/
@@ -104,64 +111,66 @@ header h1{
 .work{
 	margin: 0 auto; 
 	width:60%;
-	margin-bottom:5%;
-	background-color:#e8eaf6;
+	margin-bottom:2%;
+	background-color:var(--light-color);
 	padding: 10% 30px 10% 30px;
 }
 
 /*Footer*/
 
 footer{
-	background-color: #616161;
     position: relative;
     z-index: 10;
     height: 9em;
     overflow-y: hidden;
-}
-
-footer p{
-	display:inline;
-	font-family:JosefinLight;
-}
-
-footer h5 {
-	display:block;
-	font-family:JosefinLight;
-	background-color:#757575;
-	font-size: 2em;
-}
-
-footer img{
-	margin-top:1%;
-	width:32px;
-	height:32px;
-	display:inline;
+    background-color: var(--light-color);
 }
 
 .main-footer{
 	vertical-align: center;
 	text-align: center;	
+	border-top: 3px solid black;
+	border-color: var(--dark-color);
+	margin: 0px;
 }
 
-.main-footer p{
-	color:#fff;
+.main-footer img{
+	height:80%;
+	width:10%;
 }
+
+.main-footer img{
+	height:80%;
+	width:8%;
+	margin-left: 3%;
+	margin-right:3%;
+	padding: 2%;
+	margin-top: 0px;
+}
+
+.main-footer img:hover{
+	background: #66A5AD;
+}
+
 /*Skills*/
 
 .myskills{
 	padding-top:2%;
+	padding-bottom:2%;
 	padding-left:2%;
 	width:70%;
 	margin-left:15%;
-	margin-right:right;
-	background-color:#e8eaf6;
-	margin-bottom:5%;
+	margin-right:15%	;
+	background-color:var(--light-color);
+	margin-bottom:3%;
+	margin-top:3%;
 }
 
 .myskills h2{
 	margin-left:5%;
 	font-family:JosefinBold;
 	font-size:2em;
+	width: 
 	top:0px;
 }
 
@@ -169,33 +178,44 @@ footer img{
 	display:inline-block;
 	font-family:Cabin;
 	font-size:1em;
-	width:calc((10vw + 10vh) / 2);
+	width:calc((15vw + 15vh) / 2);
 	margin-left:10%;
 }
 
-.myskills .small-ball{
-	width:2%;
-	height:2%;
-	background-color:#e57373; 
+.myskills .active-ball{
+	width:1em;
+	height:1em; 
+	background-color:var(--dark-color); 
 	display:inline-block;
 	margin-left:2%;
-	border:0.2em solid black;
+	border:1px solid black;
+	border-radius: 100%;
+}
+.myskills .unactive-ball{
+	width:1em;
+	height:1em;  
+	background-color:var(--light-color); 
+	display:inline-block;
+	margin-left:2%;
+	border:1px solid black;
+	border-radius: 100%;
 }	
 
 .skill-block{
 	display:inline-block;
 	width:45%;
-	padding:0px;
-	top:0%;
+	vertical-align: top;
 }
 
 /*Home*/
 
 .myhome{
-	background-color:#e8eaf6;
+	background-color:var(--light-color);
 	margin-left:15%;
 	margin-right:15%;
 	padding-bottom:5%;
+	margin-top:2%;
+	margin-bottom:2%;
 }
 
 .myhome #profile-pic{
@@ -210,6 +230,7 @@ footer img{
 	 display:inline-block;
 	 font-family:Josefin;/*mudar a fonte pedir ajuda pro DM*/
 	 font-size:2em;
+	 color:var(--dark-color);
 }
 
 #text-about {
@@ -228,9 +249,10 @@ footer img{
 }
 
 #text-study h3{
-	color:#3f51b5;
+	color:var(--ocean-color);
 	font-size:1.2em;
 	font-family:JosefinBold;
+
 }
 
 #text-study p{
